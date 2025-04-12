@@ -4,7 +4,6 @@
     vim_enter = { };
     indentscope = { };
     restore_cursor = { };
-    markdown = { };
   };
 
   autoCmd = [
@@ -73,15 +72,12 @@
       };
     }
     {
-      group = "markdown";
       event = [ "FileType" ];
       pattern = [ "*.md" ];
-      callback = {
-        __raw = ''
-          inoremap <buffer> ,f <Esc>/<++><CR>:nohlsearch<CR>\"_c4l
-          inoremap <buffer> ,b **** <++><Esc>F*hi
-        '';
-      };
+      command = ''
+        inoremap <buffer> ,f <Esc>/<++><CR>:nohlsearch<CR>"_c4l
+        inoremap <buffer> ,b **** <++><Esc>F*hi
+      '';
     }
   ];
 }
