@@ -489,5 +489,13 @@
         desc = "Previous Tab";
       };
     }
+    {
+      mode = "n";
+      key = ",d";
+      action = "i\"\"<esc>";
+      options = {
+        desc = "input double quotation marks";
+      };
+    }
   ];
 }
