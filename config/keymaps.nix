@@ -489,5 +489,15 @@
         desc = "Previous Tab";
       };
     }
+    {
+      mode = "v";
+      key = "<leader>y";
+      action = ''
+        "+y
+      '';
+      options = {
+        desc = "";
+      };
+    }
   ];
 }
