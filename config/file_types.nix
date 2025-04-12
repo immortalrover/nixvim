@@ -34,7 +34,7 @@
     }
   ];
 
-  files."ftdetect/markdownft.lua".keymaps = [
+  files."after/ftplugin/markdown.lua".keymaps = [
     {
       mode = "i";
       key = ",f";
