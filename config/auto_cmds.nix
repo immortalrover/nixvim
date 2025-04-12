@@ -78,10 +78,8 @@
       pattern = [ "*.md" ];
       callback = {
         __raw = ''
-          function()
-            vim.keymap.set("i", ",f", [[<Esc>/<++><CR>:nohlsearch<CR>"_c4l]])
-            vim.keymap.set("i", ",b", [[**** <++><Esc>F*hi]])
-          end
+          inoremap <buffer> ,f <Esc>/<++><CR>:nohlsearch<CR>\"_c4l
+          inoremap <buffer> ,b **** <++><Esc>F*hi
         '';
       };
     }
