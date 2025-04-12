@@ -505,7 +505,22 @@
       action = "<Esc>/<++><CR>:nohlsearch<CR>\"_c4l";
       options = {
         buffer = true;
-        desc = "Find first placeholder";
+      };
+    }
+    {
+      mode = "i";
+      key = ",w";
+      action = "<Esc>/ <++><CR>:nohlsearch<CR>\"_c5l<CR>";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = "<C-e>";
+      action = "<Esc>/<++><CR>:nohlsearch<CR>\"_c4l";
+      options = {
+        buffer = true;
       };
     }
     {
@@ -514,7 +529,86 @@
       action = "**** <++><Esc>F*hi";
       options = {
         buffer = true;
-        desc = "Bold next word";
+      };
+    }
+    {
+      mode = "i";
+      key = ",s";
+      action = "~~~~ <++><Esc>F~hi";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",i";
+      action = "** <++><Esc>F*i";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",d";
+      action = "`` <++><Esc>F`i";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",c";
+      action = "```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",m";
+      action = "- [ ]";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",1";
+      action = "#<Space><Enter><++><Esc>kA";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",2";
+      action = "##<Space><Enter><++><Esc>kA";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",3";
+      action = "###<Space><Enter><++><Esc>kA";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = ",4";
+      action = "####<Space><Enter><++><Esc>kA";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "\\y";
+      action = "V%y";
+      options = {
+        buffer = true;
       };
     }
   ];
