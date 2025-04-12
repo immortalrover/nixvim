@@ -10,7 +10,7 @@
       '';
 
     clipboard = {
-      providers.wl-copy.enable = true;
+      providers.xclip.enable = true;
     };
 
     opts = {
@@ -21,7 +21,7 @@
       relativenumber = true;
 
       # Use the system clipboard
-      # clipboard = "unnamedplus";
+      clipboard = "unnamedplus";
 
       # Number of spaces that represent a <TAB>
       tabstop = 2;
