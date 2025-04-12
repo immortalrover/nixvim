@@ -71,13 +71,5 @@
         '';
       };
     }
-    {
-      event = [ "FileType" ];
-      pattern = [ "*.md" ];
-      command = ''
-        inoremap <buffer> ,f <Esc>/<++><CR>:nohlsearch<CR>"_c4l
-        inoremap <buffer> ,b **** <++><Esc>F*hi
-      '';
-    }
   ];
 }

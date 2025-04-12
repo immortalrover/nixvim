@@ -496,7 +496,29 @@
         "+y
       '';
       options = {
-        desc = "";
+        desc = "Copy to clipboard";
+      };
+    }
+    {
+      mode = "i";
+      key = ",f";
+      action = ''
+        <Esc>/<++><CR>:nohlsearch<CR>"_c4l
+      '';
+      options = {
+        buffer = true;
+        desc = "Find first placeholder";
+      };
+    }
+    {
+      mode = "i";
+      key = ",b";
+      action = ''
+        **** <++><Esc>F*hi
+      '';
+      options = {
+        buffer = true;
+        desc = "Bold next word";
       };
     }
   ];
