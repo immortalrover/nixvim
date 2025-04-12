@@ -75,7 +75,7 @@
     {
       group = "markdown";
       event = [ "FileType" ];
-      pattern = [ "md" ];
+      pattern = [ "*.md" ];
       callback = {
         __raw = ''
           function()
