@@ -4,6 +4,7 @@
     vim_enter = { };
     indentscope = { };
     restore_cursor = { };
+    markdown = { };
   };
 
   autoCmd = [
@@ -68,6 +69,17 @@
               vim.cmd "normal! g`\""
             end
           end
+        '';
+      };
+    }
+    {
+      group = "markdown";
+      event = [ "FileType" ];
+      pattern = [ "md" ];
+      callback = {
+        __raw = ''
+          vim.keymaps.set("i", ",f", [[<Esc>/<++><CR>:nohlsearch<CR>"_c4l]], {buffer = true})
+          vim.keymaps.set("i", ",b", [[**** <++><Esc>F*hi]], {buffer=true})
         '';
       };
     }
