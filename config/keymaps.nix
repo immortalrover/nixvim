@@ -566,7 +566,7 @@
     {
       mode = "i";
       key = ",m";
-      action = "- [ ]";
+      action = "- [ ] ";
       options = {
         buffer = true;
       };
@@ -609,6 +609,7 @@
       action = "V%y";
       options = {
         buffer = true;
+        desc = "Copy this block";
       };
     }
   ];
