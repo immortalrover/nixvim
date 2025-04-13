@@ -529,18 +529,18 @@
     {
       mode = "i";
       key = "\\l";
-      action = "<Esc>$i";
+      action = "<Esc>$a";
       options = {
         buffer = true;
       };
     }
-    # {
-    #   mode = "i";
-    #   key = "\\h";
-    #   action = "<Esc>^i";
-    #   options = {
-    #     buffer = true;
-    #   };
-    # }
+    {
+      mode = "i";
+      key = "\\h";
+      action = "<Esc>^i";
+      options = {
+        buffer = true;
+      };
+    }
   ];
 }
