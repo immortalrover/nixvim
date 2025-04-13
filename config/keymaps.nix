@@ -526,14 +526,14 @@
         desc = "Select this block";
       };
     }
-    # {
-    #   mode = "i";
-    #   key = "\\l";
-    #   action = "<Esc>$i";
-    #   options = {
-    #     buffer = true;
-    #   };
-    # }
+    {
+      mode = "i";
+      key = "\\l";
+      action = "<Esc>$i";
+      options = {
+        buffer = true;
+      };
+    }
     # {
     #   mode = "i";
     #   key = "\\h";
