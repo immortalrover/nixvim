@@ -1,5 +1,5 @@
 {
-  plugin.vimwiki = {
+  plugins.vimwiki = {
     enable = true;
     settings = {
       autowriteall = 0;
