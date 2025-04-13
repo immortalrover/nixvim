@@ -1,5 +1,4 @@
 {
-  plugins.vimwiki.enable = true;
   # plugins.vimwiki = {
   #   enable = true;
   #   # settings = {
