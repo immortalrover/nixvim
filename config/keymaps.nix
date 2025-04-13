@@ -387,15 +387,15 @@
         desc = "Hide Terminal";
       };
     }
-    {
-      mode = "n";
-      key = "<leader>ww";
-      action = "<C-W>p";
-      options = {
-        desc = "Other Window";
-        remap = true;
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>ww";
+    #   action = "<C-W>p";
+    #   options = {
+    #     desc = "Other Window";
+    #     remap = true;
+    #   };
+    # }
     {
       mode = "n";
       key = "<leader>wd";
