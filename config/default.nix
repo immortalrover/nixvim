@@ -23,7 +23,7 @@ _: {
     ./plugins/editor/neo-tree.nix
     ./plugins/editor/treesitter.nix
     ./plugins/editor/undotree.nix
-    ./plugins/editor/illuminate.nix
+    # ./plugins/editor/illuminate.nix
     ./plugins/editor/indent-blankline.nix
     ./plugins/editor/todo-comments.nix
     ./plugins/editor/copilot-chat.nix
