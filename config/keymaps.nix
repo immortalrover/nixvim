@@ -558,5 +558,13 @@
         buffer = true;
       };
     }
+    {
+      mode = "n";
+      key = "<leader>n";
+      action = ":bn<CR>";
+      options = {
+        desc = "Next buffer";
+      };
+    }
   ];
 }
