@@ -566,5 +566,13 @@
         desc = "Next buffer";
       };
     }
+    {
+      mode = "n";
+      key = "\\q";
+      action = ":bd<CR>";
+      options = {
+        desc = "Close buffer";
+      };
+    }
   ];
 }
