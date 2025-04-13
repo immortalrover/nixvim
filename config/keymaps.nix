@@ -508,6 +508,15 @@
         desc = "Copy this block";
       };
     }
+    {
+      mode = "n";
+      key = "\\d";
+      action = "V%d";
+      options = {
+        buffer = true;
+        desc = "Delete this block";
+      };
+    }
     # {
     #   mode = "i";
     #   key = "\\l";
@@ -522,15 +531,6 @@
     #   action = "<Esc>^i";
     #   options = {
     #     buffer = true;
-    #   };
-    # }
-    # {
-    #   mode = "n";
-    #   key = "\\d";
-    #   action = "V%d";
-    #   options = {
-    #     buffer = true;
-    #     desc = "Delete this block";
     #   };
     # }
   ];
