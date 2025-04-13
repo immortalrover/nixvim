@@ -517,6 +517,15 @@
         desc = "Delete this block";
       };
     }
+    {
+      mode = "n";
+      key = "\\c";
+      action = "V%gc";
+      options = {
+        buffer = true;
+        desc = "Comment this block";
+      };
+    }
     # {
     #   mode = "i";
     #   key = "\\l";
