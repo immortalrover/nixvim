@@ -528,7 +528,7 @@
     }
     {
       mode = "i";
-      key = "\\l";
+      key = "\\d";
       action = "<Esc>$a";
       options = {
         buffer = true;
@@ -536,8 +536,24 @@
     }
     {
       mode = "i";
-      key = "\\h";
+      key = "\\a";
       action = "<Esc>^i";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = "\\s";
+      action = "<Esc>10ji";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = "\\w";
+      action = "<Esc>10ki";
       options = {
         buffer = true;
       };
