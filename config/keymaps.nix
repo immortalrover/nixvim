@@ -508,5 +508,30 @@
         desc = "Copy this block";
       };
     }
+    {
+      mode = "i";
+      key = "\\l";
+      action = "<Esc>$i";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "i";
+      key = "\\h";
+      action = "<Esc>^i";
+      options = {
+        buffer = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "\\d";
+      action = "V%d";
+      options = {
+        buffer = true;
+        desc = "Delete this block";
+      };
+    }
   ];
 }
