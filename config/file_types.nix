@@ -1,40 +1,5 @@
-{
-  autoGroups = {
-    filetypes = { };
-  };
-
-  files."ftdetect/terraformft.lua".autoCmd = [
-    {
-      group = "filetypes";
-      event = [
-        "BufRead"
-        "BufNewFile"
-      ];
-      pattern = [
-        "*.tf"
-        " *.tfvars"
-        " *.hcl"
-      ];
-      command = "set ft=terraform";
-    }
-  ];
-
-  files."ftdetect/bicepft.lua".autoCmd = [
-    {
-      group = "filetypes";
-      event = [
-        "BufRead"
-        "BufNewFile"
-      ];
-      pattern = [
-        "*.bicep"
-        "*.bicepparam"
-      ];
-      command = "set ft=bicep";
-    }
-  ];
-
-  files."after/ftplugin/markdown.lua".keymaps = [
+let
+  markdown_keymaps = [
     {
       mode = "i";
       key = ",f";
@@ -140,4 +105,43 @@
       };
     }
   ];
+in
+{
+  autoGroups = {
+    filetypes = { };
+  };
+
+  files."ftdetect/terraformft.lua".autoCmd = [
+    {
+      group = "filetypes";
+      event = [
+        "BufRead"
+        "BufNewFile"
+      ];
+      pattern = [
+        "*.tf"
+        " *.tfvars"
+        " *.hcl"
+      ];
+      command = "set ft=terraform";
+    }
+  ];
+
+  files."ftdetect/bicepft.lua".autoCmd = [
+    {
+      group = "filetypes";
+      event = [
+        "BufRead"
+        "BufNewFile"
+      ];
+      pattern = [
+        "*.bicep"
+        "*.bicepparam"
+      ];
+      command = "set ft=bicep";
+    }
+  ];
+
+  files."after/ftplugin/vimwiki.lua".keymaps = markdown_keymaps;
+  files."after/ftplugin/markdown.lua".keymaps = markdown_keymaps;
 }
