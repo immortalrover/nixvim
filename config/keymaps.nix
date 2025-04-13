@@ -523,6 +523,7 @@
       action = "V%gc";
       options = {
         buffer = true;
+        noremap = false;
         desc = "Comment this block";
       };
     }
