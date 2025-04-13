@@ -531,7 +531,7 @@
       key = "\\d";
       action = "<Esc>$a";
       options = {
-        buffer = true;
+        buffer = 100;
       };
     }
     {
