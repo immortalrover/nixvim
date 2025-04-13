@@ -58,8 +58,8 @@
           ]
           [
             "󰧑 SecondBrain"
-            ""
-            "sb"
+            "VimwikiIndex"
+            "ww"
           ]
         ];
         highlight = "string";
