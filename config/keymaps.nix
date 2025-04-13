@@ -519,12 +519,11 @@
     }
     {
       mode = "n";
-      key = "\\c";
-      action = "V%gc";
+      key = "\\\\";
+      action = "V%";
       options = {
         buffer = true;
-        noremap = false;
-        desc = "Comment this block";
+        desc = "Select this block";
       };
     }
     # {
