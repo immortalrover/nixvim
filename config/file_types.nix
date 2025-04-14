@@ -157,7 +157,7 @@ in
                 local lines = vim.fn.readfile(template_path)
                 vim.api.nvim_buf_set_lines(0,0,-1,false,lines)
                 vim.cmd([[
-                  %s/%FILENAME%/\=expand("%:t")/g
+                  %s/%FILENAME%/\=expand("%:t:r")/g
                 ]])
               end
             end
