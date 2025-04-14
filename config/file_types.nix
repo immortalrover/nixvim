@@ -157,7 +157,7 @@ in
                 local template_content = vim.fn.readfile(template_path)[1]
                 vim.api.nvim_buf_set_lines(0, 0, 0, false, {template_content})
                 vim.cmd([[
-                  %s/FILENAME/<C-R>=expand("%:t")<CR>/
+                  %s/%FILENAME%/<C-R>=expand("%:t")<CR>/
                 ]])
               end
             end
