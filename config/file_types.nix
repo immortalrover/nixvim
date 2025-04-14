@@ -152,7 +152,7 @@ in
               local template_dir = expand('~/vimwiki/templates/')
               local filename = vim.fn.expand('%:t:r')
               local ft = vim.o.filetype
-              let template_path = template_dir . ft . '.tmpl'
+              local template_path = template_dir .. ft .. '.tmpl'
               if vim.fn.filereadable(template_path) == 1 then
                 local template_content = vim.fn.readfile(template_path)[1]
                 template_content = template_content:gsub('%FILENAME%', vim.fn.expand('%:t'))
