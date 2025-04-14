@@ -154,10 +154,10 @@ in
               local ft = vim.o.filetype
               local template_path = template_dir .. ft .. '.tmpl'
               if vim.fn.filereadable(template_path) == 1 then
-                local template_content = vim.fn.readfile(template_path)[1]
-                vim.api.nvim_buf_set_lines(0, 0, 0, false, {template_content})
+                local lines = vim.fn.readfile(template_path)
+                vim.api.nvim_buf_set_lines(0,0,-1,false,lines)
                 vim.cmd([[
-                  %s/%FILENAME%/<C-R>=expand("%:t")<CR>/
+                  %s/%FILENAME%/\=expand("%:t")/g
                 ]])
               end
             end
