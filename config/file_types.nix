@@ -155,8 +155,10 @@ in
               local template_path = template_dir .. ft .. '.tmpl'
               if vim.fn.filereadable(template_path) == 1 then
                 local template_content = vim.fn.readfile(template_path)[1]
-                template_content = template_content:gsub('%FILENAME%', vim.fn.expand('%:t'))
                 vim.api.nvim_buf_set_lines(0, 0, 0, false, {template_content})
+                vim.cmd([[
+                  %s/FILENAME/<C-R>=expand("%:t")<CR>/
+                ]])
               end
             end
           '';
