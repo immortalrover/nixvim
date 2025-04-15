@@ -182,7 +182,7 @@ in
       {
         mode = "i";
         key = ",a";
-        action = "<Esc>2jO* <CR><++><Esc>ki";
+        action = "<Esc>2jO* <CR><++><Esc>ka";
         options = {
           buffer = true;
         };
