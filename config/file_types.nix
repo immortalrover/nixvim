@@ -179,6 +179,14 @@ in
           '';
         };
       }
+      {
+        mode = "i";
+        key = ",a";
+        action = "<Esc>2jO* <CR><++><Esc>ki";
+        options = {
+          buffer = true;
+        };
+      }
     ];
   };
   files."after/ftplugin/markdown.lua".keymaps = markdown_keymaps;
