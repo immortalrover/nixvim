@@ -165,7 +165,21 @@ in
         };
       }
     ];
-    keymaps = markdown_keymaps;
+    keymaps = markdown_keymaps ++ [
+      {
+        mode = "n";
+        key = "<leader>mp";
+        action = {
+          __raw = ''
+            function ()
+              vim.cmd("set ft=markdown")
+              vim.cmd("MarkdownPreview")
+              vim.cmd("set ft=vimwiki")
+            end
+          '';
+        };
+      }
+    ];
   };
   files."after/ftplugin/markdown.lua".keymaps = markdown_keymaps;
 }
