@@ -566,5 +566,13 @@
         desc = "Next buffer";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>v";
+      action = "\"*p";
+      options = {
+        desc = "Paste from System Clipboard";
+      };
+    }
   ];
 }
