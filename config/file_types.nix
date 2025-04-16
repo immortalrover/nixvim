@@ -104,6 +104,14 @@ let
         buffer = true;
       };
     }
+    {
+      mode = "i";
+      key = ",v";
+      action = "<Esc>\"*pi";
+      options = {
+        buffer = true;
+      };
+    }
   ];
 in
 {

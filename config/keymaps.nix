@@ -574,5 +574,13 @@
         desc = "Paste from System Clipboard";
       };
     }
+    # {
+    #   mode = "i";
+    #   key = "\\v";
+    #   action = ''<Esc>\"*pi'';
+    #   options = {
+    #     buffer = true;
+    #   };
+    # }
   ];
 }
