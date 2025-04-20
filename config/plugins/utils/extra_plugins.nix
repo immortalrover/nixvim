@@ -1,6 +1,5 @@
 { pkgs, ... }:
 {
-  extraPlugins = with pkgs.vimPlugins; [
-    vimwiki
-  ];
+  # extraPlugins = with pkgs.vimPlugins; [
+  # ];
 }
