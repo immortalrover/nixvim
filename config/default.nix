@@ -53,5 +53,6 @@ _: {
     ./plugins/utils/toggleterm.nix
     ./plugins/utils/web-devicons.nix
     ./plugins/utils/vimwiki.nix
+    ./plugins/utils/vimtex.nix
   ];
 }
