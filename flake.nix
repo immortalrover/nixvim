@@ -58,7 +58,7 @@
                   done
                 '';
             in
-            withExtraPackages nixvim'.makeNixvimWithModule nixvimModule [ pkgs.rustfmt ];
+            withExtraPackages (nixvim'.makeNixvimWithModule nixvimModule) [ pkgs.rustfmt ];
         in
         {
           checks = {
