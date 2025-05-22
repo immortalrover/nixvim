@@ -203,7 +203,7 @@ in
       {
         mode = "n";
         key = "r";
-        action = ":RustRun<CR>";
+        action = ":make run<CR>";
       }
     ];
   };
