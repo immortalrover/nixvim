@@ -199,5 +199,12 @@ in
       ];
     };
     "after/ftplugin/markdown.lua".keymaps = markdown_keymaps;
+    "after/ftplugin/rust.lua".keymaps = [
+      {
+        mode = "n";
+        key = "r";
+        action = ":RustRun<CR>";
+      }
+    ];
   };
 }
