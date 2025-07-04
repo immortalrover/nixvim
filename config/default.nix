@@ -54,5 +54,6 @@ _: {
     ./plugins/utils/web-devicons.nix
     ./plugins/utils/vimwiki.nix
     ./plugins/utils/vimtex.nix
+    ./plugins/utils/css-color.nix
   ];
 }
