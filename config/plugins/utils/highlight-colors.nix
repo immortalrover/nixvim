@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  plugins.vim-css-color = {
+  plugins.highlight-colors = {
     enable = true;
   };
 }
