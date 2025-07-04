@@ -23,7 +23,7 @@
           cursorcolumn = false;
           foldcolumn = "0";
           list = false;
-          signcolumn = "no";
+          signcolumn = "yes:2";
           spell = false;
           wrap = false;
         };
