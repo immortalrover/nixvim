@@ -55,5 +55,6 @@ _: {
     ./plugins/utils/vimwiki.nix
     ./plugins/utils/vimtex.nix
     ./plugins/utils/css-color.nix
+    ./plugins/utils/oil.nix
   ];
 }
