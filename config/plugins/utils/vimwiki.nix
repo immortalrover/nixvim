@@ -5,8 +5,8 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "immortalrover";
       repo = "vimwiki";
-      rev = "ea6b99b95f8d08f782bc4bdec77fbec6dffebad5";
-      hash = "sha256-sSpbzu3BPYgf27m/pflEnxjniPIqLEOWP4cYajsHPoo=";
+      rev = "bb90f5e2015f9f9794a41cf48aed73a88ee32e1e";
+      hash = "sha256-8NQH0L7cstMFdc+MhzMp4MjbMN3P4NxGLs8mHn5zzbs=";
     };
   };
 in
