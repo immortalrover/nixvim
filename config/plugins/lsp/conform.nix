@@ -116,6 +116,11 @@
           };
           terraform = [ "terraform_fmt" ];
           bicep = [ "bicep" ];
+          sh = [
+            "shellcheck"
+            "shellharden"
+            "shfmt"
+          ];
           bash = [
             "shellcheck"
             "shellharden"
