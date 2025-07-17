@@ -152,28 +152,28 @@ in
     ];
 
     "after/ftplugin/vimwiki.lua" = {
-      autoCmd = [
-        {
-          event = [ "BufNewFile" ];
-          callback = {
-            __raw = ''
-              function ()
-                local template_dir = vim.fn.expand('~/vimwiki/templates/')
-                local filename = vim.fn.expand('%:t:r')
-                local ft = vim.o.filetype
-                local template_path = template_dir .. ft .. '.tmpl'
-                if vim.fn.filereadable(template_path) == 1 then
-                  local lines = vim.fn.readfile(template_path)
-                  vim.api.nvim_buf_set_lines(0,0,-1,false,lines)
-                  vim.cmd([[
-                    %s/%FILENAME%/\=expand("%:t:r")/g
-                  ]])
-                end
-              end
-            '';
-          };
-        }
-      ];
+      # autoCmd = [
+      #   {
+      #     event = [ "BufNewFile" ];
+      #     callback = {
+      #       __raw = ''
+      #         function ()
+      #           local template_dir = vim.fn.expand('~/vimwiki/templates/')
+      #           local filename = vim.fn.expand('%:t:r')
+      #           local ft = vim.o.filetype
+      #           local template_path = template_dir .. ft .. '.tmpl'
+      #           if vim.fn.filereadable(template_path) == 1 then
+      #             local lines = vim.fn.readfile(template_path)
+      #             vim.api.nvim_buf_set_lines(0,0,-1,false,lines)
+      #             vim.cmd([[
+      #               %s/%FILENAME%/\=expand("%:t:r")/g
+      #             ]])
+      #           end
+      #         end
+      #       '';
+      #     };
+      #   }
+      # ];
       keymaps = markdown_keymaps ++ [
         {
           mode = "n";
@@ -195,6 +195,11 @@ in
           options = {
             buffer = true;
           };
+        }
+        {
+          mode = "n";
+          key = "r";
+          action = "<plug>Vimwiki2HTMLBrowse<CR>";
         }
       ];
     };
