@@ -217,6 +217,7 @@ in
             desc = "generate tags and index";
           };
         }
+<<<<<<< HEAD
         {
           mode = "n";
           key = ",l";
@@ -253,6 +254,7 @@ in
             silent = true;
           };
         }
+=======
       ];
     };
     "after/ftplugin/markdown.lua".keymaps = markdown_keymaps;
