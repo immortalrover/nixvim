@@ -201,6 +201,14 @@ in
           key = "r";
           action = "<plug>Vimwiki2HTMLBrowse<CR>";
         }
+        {
+          mode = "n";
+          key = "<Space>r";
+          action = ":!gtx<CR>";
+          options = {
+            desc = "generate tags and index";
+          };
+        }
       ];
     };
     "after/ftplugin/markdown.lua".keymaps = markdown_keymaps;
