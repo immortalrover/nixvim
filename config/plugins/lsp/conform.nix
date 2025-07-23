@@ -88,6 +88,7 @@
             __unkeyed-2 = "prettier";
             stop_after_first = true;
           };
+          cpp = [ "astyle" ];
           javascript = {
             __unkeyed-1 = "prettierd";
             __unkeyed-2 = "prettier";
@@ -132,6 +133,9 @@
         };
 
         formatters = {
+          astyle = {
+            command = "${lib.getExe pkgs.astyle}";
+          };
           black = {
             command = "${lib.getExe pkgs.black}";
           };
