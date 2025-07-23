@@ -2,14 +2,6 @@ let
   markdown_keymaps = [
     {
       mode = "i";
-      key = ",a";
-      action = "$$<Esc>i";
-      options = {
-        buffer = true;
-      };
-    }
-    {
-      mode = "i";
       key = ",f";
       action = "<Esc>/<++><CR>:nohlsearch<CR>\"_c4l";
       options = {
@@ -200,6 +192,14 @@ in
           mode = "i";
           key = ",a";
           action = "<Esc>2jO* <CR><++><CR><Esc>2kla";
+          options = {
+            buffer = true;
+          };
+        }
+        {
+          mode = "i";
+          key = ",q";
+          action = "$$<Esc>i";
           options = {
             buffer = true;
           };
