@@ -201,6 +201,50 @@ in
           key = "r";
           action = "<plug>Vimwiki2HTMLBrowse<CR>";
         }
+        {
+          mode = "n";
+          key = "<Space>r";
+          action = ":!gtx<CR>";
+          options = {
+            desc = "generate tags and index";
+          };
+        }
+        {
+          mode = "n";
+          key = ",l";
+          action = "v:<C-u>lua MiniSurround.add('visual')<CR>$";
+          options = {
+            desc = "use $ to fold the letter";
+            silent = true;
+          };
+        }
+        {
+          mode = "n";
+          key = ",f";
+          action = "v3l:<C-u>lua MiniSurround.add('visual')<CR>$";
+          options = {
+            desc = "use $ to fold the func";
+            silent = true;
+          };
+        }
+        {
+          mode = "n";
+          key = ",b";
+          action = "O{{$<CR>\boxed{<CR>\begin{array}{l}<Esc>jo\end{array}<CR>}<CR>}}$<Esc>3k";
+          options = {
+            desc = "use $ to fold the block";
+            silent = true;
+          };
+        }
+        {
+          mode = "n";
+          key = ",a";
+          action = "O{{$%align%<Esc>jo}}$<Esc>k";
+          options = {
+            desc = "use $ to fold the normal block";
+            silent = true;
+          };
+        }
       ];
     };
     "after/ftplugin/markdown.lua".keymaps = markdown_keymaps;
