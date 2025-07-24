@@ -205,6 +205,14 @@ in
           };
         }
         {
+          mode = "i";
+          key = ",e";
+          action = "()<Esc>i";
+          options = {
+            buffer = true;
+          };
+        }
+        {
           mode = "n";
           key = "r";
           action = "<plug>Vimwiki2HTMLBrowse<CR>";
